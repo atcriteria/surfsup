@@ -1,0 +1,72 @@
+
+html {
+    height: 100%;
+}
+
+body {
+    height:100%;
+    margin:auto;
+    background:linear-gradient(to bottom,#12bad1 0%,#38c3bf 50%, tan 90%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#image-wrapper{
+    /*deleted whitespace between nav and picture*/
+    font-size:0px; /*DELETES WHITE SPACE AHAHA*/
+    /* display:flex;  <----another way to delete whitespace */
+}
+
+#nav {
+    background: #ff0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* center items in div */
+    align-items: center; 
+    height:75px;
+}
+
+#nav li {
+    margin: 0 50px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#nav a{
+    text-decoration:none;
+
+}
+#nav li:hover {
+
+    background: chartreuse;
+}
+/*linear-gradient(to bottom,#12bad1 0,#38c3bf 100%*/
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5.0em;
+    color:navy;
+}
+
+p{
+    margin:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.4em;
+}
+
+p:first-of-type:first-letter {
+    color: rgba(12, 99, 99, 0.692) ;
+    padding: 0 .3rem;
+    margin: 0 .3rem 0 0;
+    border: 2px solid;
+    border-radius: 8px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 5rem;
+    float: left;
+    line-height: 1;
+  }
+  /* Used to indent only paragraphs after the first AND you dont care about explorer 6,7,8, which I DON'T :^)))))  */
+   p:not(:first-of-type)::first-line {
+    text-indent: 75px;
+} 
